@@ -112,7 +112,7 @@ def mst( mesh, weights):
     
     #if no weights define, assign random weights
     if weights == None:
-        mu.addRandomWeights(mstGraph,3,10)
+        mu.addRandomWeights(mstGraph,6,12)
     else:
         mu.addWeights(mstGraph, weights)
 
@@ -131,4 +131,4 @@ def mst( mesh, weights):
 
 
 if __name__== "__main__":
-    app.run()
+    app.run(debug=True)
