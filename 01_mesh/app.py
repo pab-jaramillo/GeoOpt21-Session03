@@ -28,7 +28,8 @@ def meshFromPoints(pts):
         m.Vertices.Add(p.X, p.Y, p.Z)
 
     
-    m.Faces.AddFace(0,1,2,2) #triangular meshes repeat the last number!
+    m.Faces.AddFace(0,1,2,3) #triangular meshes repeat the last number!
+    m.Faces.AddFace(0,1,2,3)
 
     print (m.Faces[0])
     print (m.Faces.TriangleCount)
